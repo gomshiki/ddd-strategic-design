@@ -183,9 +183,8 @@ docker compose -p kitchenpos up -d
 ### 상품
 - `product`는 `product name`과 `product price`를 반드시 가져야 한다.
   - `product name`에는 `slang`이 포함될 수 없다.
-  - `price`는 0원 이상이여야 한다.
-- `product price`는 변경할 수 있다.
-  - `product price`를 변경하면 해당 `product`가 속한 `menu`들의 `display status`를 다시 설정한다.
+  - `price`는 0원 이상이여야 한다. 
+  - `display status`를 다시 설정한다.
 
 ### 메뉴
 - `menu`를 생성할 수 있다.
@@ -201,6 +200,8 @@ docker compose -p kitchenpos up -d
   - `undisplayed` 상태로 변경 시, 추가 검증을 하지 않고, 변경한다.
 - `menu`의 전체 목록을 조회할 수 있다.
 - `menu group`은 반드시 존재해야한다.
+- `product price`는 변경할 수 있다.
+  - `product price`를 변경하면 해당 `product`가 속한 `menu product` 금액의 합보다 높아야 한다.
 
 ### 주문
 - `order`을 생성할 수 있다.
