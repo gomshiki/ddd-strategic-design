@@ -119,6 +119,7 @@ docker compose -p kitchenpos up -d
 | 메뉴에 속한 상품의 수량 | menu product quantity | 메뉴에 속한 상품의 개수를 나타낸다.                              |
 | 비속어           | slang                 | 비속어를 지칭한다.                                        |
 
+
 ### 주문
 
 | 한글명   | 영문명             | 설명                                                                                   |
@@ -202,7 +203,6 @@ docker compose -p kitchenpos up -d
 - `menu group`은 반드시 존재해야한다.
 - `product price`는 변경할 수 있다.
   - `product price`를 변경하면 해당 `product`가 속한 `menu product` 금액의 합보다 높아야 한다.
-
 
 ### 주문
 - `order`을 생성할 수 있다.
