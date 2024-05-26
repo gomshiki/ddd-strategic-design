@@ -203,6 +203,7 @@ docker compose -p kitchenpos up -d
 - `product price`는 변경할 수 있다.
   - `product price`를 변경하면 해당 `product`가 속한 `menu product` 금액의 합보다 높아야 한다.
 
+
 ### 주문
 - `order`을 생성할 수 있다.
 - `order type`은 반드시 존재해야 한다.
